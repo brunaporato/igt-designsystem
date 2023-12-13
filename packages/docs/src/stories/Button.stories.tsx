@@ -1,20 +1,18 @@
 import { StoryObj, Meta } from '@storybook/react'
-import { Button, ButtonProps } from '@ignite-ui/react'
+import { Box, BoxProps } from '@ignite-ui/react'
 
 export default {
-  title: 'Form/Button',
-  component: Button,
+  title: 'Surface/Box',
+  component: Box,
   args: {
-    children: 'Enviar',
+    children: (
+      <>
+        <p>Testando o elemento Box</p>
+      </>
+    ),
   },
-} as Meta<ButtonProps>
+} as Meta<BoxProps>
 
-export const Primary: StoryObj<ButtonProps> = {
+export const Primary: StoryObj<BoxProps> = {
   args: {},
-}
-
-export const Big: StoryObj<ButtonProps> = {
-  args: {
-    size: 'big',
-  },
 }
