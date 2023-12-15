@@ -28,5 +28,10 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/igt-designsystem'
+    }
+  }
 };
 export default config;
