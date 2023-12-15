@@ -32,6 +32,8 @@ const config: StorybookConfig = {
     if (configType === 'PRODUCTION') {
       config.base = '/igt-designsystem'
     }
+
+    return config
   }
 };
 export default config;
