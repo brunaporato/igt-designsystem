@@ -1,0 +1,3 @@
+import{c as e}from"./index-23e0eed5.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./extends-98964cd2.js";import"./index-169ee69c.js";import"./jsx-runtime-6eef64cc.js";const d={title:"Surface/Toast",component:e,args:{title:"Agendamento realizado",text:"Quarta-feira, 23 de Outubro às 16h"}},r={args:{}};var t,a,o;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(o=(a=r.parameters)==null?void 0:a.docs)==null?void 0:o.source}}};const u=["Primary"];export{r as Primary,u as __namedExportsOrder,d as default};

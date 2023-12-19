@@ -1,0 +1,3 @@
+import{j as o}from"./jsx-runtime-6eef64cc.js";import{B as a,T as n}from"./index-23e0eed5.js";import"./index-c013ead5.js";import"./_commonjsHelpers-725317a4.js";import"./extends-98964cd2.js";import"./index-169ee69c.js";const l={title:"Surface/Box",component:a,args:{children:o.jsx(o.Fragment,{children:o.jsx(n,{children:"Testing Box component"})})},argTypes:{children:{control:{type:null}}}},r={args:{}};var e,s,t;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {}
+}`,...(t=(s=r.parameters)==null?void 0:s.docs)==null?void 0:t.source}}};const g=["Primary"];export{r as Primary,g as __namedExportsOrder,l as default};
