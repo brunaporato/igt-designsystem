@@ -1686,6 +1686,12 @@ interface ToastProps {
 }
 declare function Toast({ title, text }: ToastProps): react_jsx_runtime.JSX.Element;
 
+interface TooltipProps {
+    date: string;
+    isAvailable: boolean;
+}
+declare function Tooltip({ date, isAvailable }: TooltipProps): react_jsx_runtime.JSX.Element;
+
 declare const styled: <Type extends _stitches_react_types_util.Function | keyof JSX.IntrinsicElements | react.ComponentType<any>, Composers extends (string | _stitches_react_types_util.Function | react.ComponentType<any> | {
     [name: string]: unknown;
 })[], CSS = _stitches_react_types_css_util.CSS<{}, {
@@ -3388,4 +3394,4 @@ declare const config: {
     utils: {};
 };
 
-export { Avatar, type AvatarProps, Box, type BoxProps, Button, type ButtonProps, Checkbox, type CheckboxProps, Heading, type HeadingProps, MultiStep, type MultiStepProps, Text, TextArea, type TextAreaProps, TextInput, type TextInputProps, type TextProps, Toast, type ToastProps, config, createTheme, css, getCssText, globalCss, keyframes, styled, theme };
+export { Avatar, type AvatarProps, Box, type BoxProps, Button, type ButtonProps, Checkbox, type CheckboxProps, Heading, type HeadingProps, MultiStep, type MultiStepProps, Text, TextArea, type TextAreaProps, TextInput, type TextInputProps, type TextProps, Toast, type ToastProps, Tooltip, type TooltipProps, config, createTheme, css, getCssText, globalCss, keyframes, styled, theme };

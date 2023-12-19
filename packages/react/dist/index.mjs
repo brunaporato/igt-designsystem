@@ -558,6 +558,39 @@ function Toast({ title, text }) {
     /* @__PURE__ */ jsx5("span", { children: text })
   ] });
 }
+
+// src/components/Tooltip/styles.ts
+var TooltipContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  width: "fit-content",
+  ".box": {
+    background: "$gray900",
+    borderRadius: "$sm",
+    padding: "$3 $4",
+    color: "$gray100",
+    width: "fit-content"
+  },
+  ".tip": {
+    margin: "-0.75rem",
+    color: "$gray900"
+  }
+});
+
+// src/components/Tooltip/index.tsx
+import { CaretDown } from "phosphor-react";
+import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
+function Tooltip({ date, isAvailable }) {
+  return /* @__PURE__ */ jsxs5(TooltipContainer, { children: [
+    /* @__PURE__ */ jsx6("div", { className: "box", children: /* @__PURE__ */ jsxs5(Text, { as: "strong", size: "xs", children: [
+      date,
+      " - ",
+      isAvailable ? "Dispon\xEDvel" : "Indispon\xEDvel"
+    ] }) }),
+    /* @__PURE__ */ jsx6(CaretDown, { size: 32, weight: "fill", className: "tip" })
+  ] });
+}
 export {
   Avatar2 as Avatar,
   Box,
@@ -569,6 +602,7 @@ export {
   TextArea,
   TextInput,
   Toast,
+  Tooltip,
   config,
   createTheme,
   css,

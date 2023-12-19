@@ -69,6 +69,7 @@ __export(src_exports, {
   TextArea: () => TextArea,
   TextInput: () => TextInput,
   Toast: () => Toast,
+  Tooltip: () => Tooltip,
   config: () => config,
   createTheme: () => createTheme,
   css: () => css,
@@ -608,6 +609,39 @@ function Toast({ title, text }) {
     /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("span", { children: text })
   ] });
 }
+
+// src/components/Tooltip/styles.ts
+var TooltipContainer = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  width: "fit-content",
+  ".box": {
+    background: "$gray900",
+    borderRadius: "$sm",
+    padding: "$3 $4",
+    color: "$gray100",
+    width: "fit-content"
+  },
+  ".tip": {
+    margin: "-0.75rem",
+    color: "$gray900"
+  }
+});
+
+// src/components/Tooltip/index.tsx
+var import_phosphor_react4 = require("phosphor-react");
+var import_jsx_runtime6 = require("react/jsx-runtime");
+function Tooltip({ date, isAvailable }) {
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(TooltipContainer, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "box", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(Text, { as: "strong", size: "xs", children: [
+      date,
+      " - ",
+      isAvailable ? "Dispon\xEDvel" : "Indispon\xEDvel"
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(import_phosphor_react4.CaretDown, { size: 32, weight: "fill", className: "tip" })
+  ] });
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
@@ -620,6 +654,7 @@ function Toast({ title, text }) {
   TextArea,
   TextInput,
   Toast,
+  Tooltip,
   config,
   createTheme,
   css,
